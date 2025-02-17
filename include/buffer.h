@@ -8,6 +8,8 @@ typedef struct ubuffer
 {
 	uint32_t *fb;
 	char *cell;
+	int dirty_start; // 起始脏行
+	int dirty_end;   // 结束脏行
 } ubuffer_t;
 
 typedef struct char_under_cursor
